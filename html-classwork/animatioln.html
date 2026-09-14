@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            background-color: aquamarine;
+            border-radius: 50%;
+            animation: bounce 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes bounce{
+            from{
+                transform: translateY(0px);
+            }
+            to{
+                transform: translateY(200px);
+                background-color: blueviolet;
+            }
+        }
+    </style>
+</head>
+<body>  
+    <div class ="box">  </div>
+</body>
+</html>

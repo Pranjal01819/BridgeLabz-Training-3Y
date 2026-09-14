@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang =en> 
+    <title></title>
+    <head>
+        <style>
+            .text{
+                position: relative;
+                display: inline-block;
+            }
+            .text::after{
+                content: " ";
+                height: 3px;
+                width:0%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-color: blue;
+                transition: width .5s ease-in;
+            }
+            .text::hover::after{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>  
+
+        <h1>Text</h1>
+    </body>
+</html>
